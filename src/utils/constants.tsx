@@ -8,6 +8,7 @@ export const LANGUAGE_NAMES = {
   java: "Java",
   python: "Python",
   cpp: "C++",
+  kotlin: "Kotlin",
 };
 
 const {
@@ -16,6 +17,7 @@ const {
   python: pythonIcon,
   java: javaIcon,
   cpp: cppIcon,
+  kotlin: kotlinIcon,
 } = importIcons({ className: "size-20" });
 
 export const LANGUAGES: Languages = [
@@ -43,5 +45,10 @@ export const LANGUAGES: Languages = [
     id: 5,
     name: "cpp",
     icon: cppIcon as JSX.Element,
+  },
+  {
+    id: 6,
+    name: "kotlin",
+    icon: kotlinIcon as JSX.Element,
   },
 ];

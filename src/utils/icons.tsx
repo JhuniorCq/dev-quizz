@@ -1,6 +1,7 @@
 import CppIcon from "../icons/CppIcon";
 import JavaIcon from "../icons/JavaIcon";
 import JavaScriptIcon from "../icons/JavaScriptIcon";
+import KotlinIcon from "../icons/KotlinIcon";
 import PythonIcon from "../icons/PythonIcon";
 import TypeScriptIcon from "../icons/TypeScriptIcon";
 import type { LanguageNames } from "../types/language";
@@ -34,6 +35,10 @@ export const importIcons = ({
     return {
       [language]: <CppIcon className={className} />,
     };
+  } else if (language === "kotlin") {
+    return {
+      [language]: <KotlinIcon className={className} />,
+    };
   } else {
     return {
       javascript: <JavaScriptIcon className={className} />,
@@ -41,6 +46,7 @@ export const importIcons = ({
       java: <JavaIcon className={className} />,
       python: <PythonIcon className={className} />,
       cpp: <CppIcon className={className} />,
+      kotlin: <KotlinIcon className={className} />,
     };
   }
 };
