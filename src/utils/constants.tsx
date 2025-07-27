@@ -2,8 +2,6 @@ import type { JSX } from "react";
 import type { Languages } from "../types/language";
 import { importIcons } from "./icons";
 
-export const SERVER_URL = "http://localhost:5173";
-
 export const LANGUAGE_NAMES = {
   javascript: "JavaScript",
   typescript: "TypeScript",

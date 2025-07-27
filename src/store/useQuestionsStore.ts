@@ -1,10 +1,10 @@
 import { create } from "zustand";
-import { SERVER_URL } from "../utils/constants";
 import type { Question, QuestionsState } from "../types/questions";
 import type { LanguageNames } from "../types/language";
 import confetti from "canvas-confetti";
 import { persist } from "zustand/middleware";
 import { verifyCompletedQuestions } from "../utils/game";
+import { VITE_SERVER_URL } from "../config/config";
 
 export const useQuestionsStore = create<QuestionsState>()(
   persist(
@@ -20,7 +20,7 @@ export const useQuestionsStore = create<QuestionsState>()(
         try {
           set({ loading: true });
 
-          const response = await fetch(`${SERVER_URL}/questions.json`);
+          const response = await fetch(`${VITE_SERVER_URL}/questions.json`);
 
           if (!response.ok)
             throw new Error("Ocurrió un problema las preguntas.");
