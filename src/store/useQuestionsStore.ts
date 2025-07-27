@@ -4,7 +4,6 @@ import type { LanguageNames } from "../types/language";
 import confetti from "canvas-confetti";
 import { persist } from "zustand/middleware";
 import { verifyCompletedQuestions } from "../utils/game";
-import { SERVER_URL } from "../utils/constants";
 
 export const useQuestionsStore = create<QuestionsState>()(
   persist(
@@ -20,9 +19,8 @@ export const useQuestionsStore = create<QuestionsState>()(
         try {
           set({ loading: true });
 
-          // Dato: Al hostear la app en Vercel el fetch debe ser directamente a "questions.json" -> Ya no es necesario colocar la URL
-
-          const response = await fetch(`${SERVER_URL}/questions.json`);
+          // Dato: El fetch puede ser directamente a /questions.json -> Ya que desde public se sirve de manera directa
+          const response = await fetch("/questions.json");
 
           if (!response.ok)
             throw new Error("Ocurrió un problema las preguntas.");

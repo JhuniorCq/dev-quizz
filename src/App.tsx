@@ -11,3 +11,5 @@ function App() {
 }
 
 export default App;
+
+// En el Footer pone al botón de reseteo
