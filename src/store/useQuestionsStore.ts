@@ -4,7 +4,7 @@ import type { LanguageNames } from "../types/language";
 import confetti from "canvas-confetti";
 import { persist } from "zustand/middleware";
 import { verifyCompletedQuestions } from "../utils/game";
-// import { SERVER_URL } from "../utils/constants";
+import { VITE_URL_SERVER } from "../config/config";
 
 export const useQuestionsStore = create<QuestionsState>()(
   persist(
@@ -20,9 +20,7 @@ export const useQuestionsStore = create<QuestionsState>()(
         try {
           set({ loading: true });
 
-          const response = await fetch(
-            `https://dev-quizz-ten.vercel.app/questions.json`
-          );
+          const response = await fetch(`${VITE_URL_SERVER}/questions.json`);
 
           if (!response.ok)
             throw new Error("Ocurrió un problema las preguntas.");

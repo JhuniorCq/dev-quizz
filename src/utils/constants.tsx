@@ -1,12 +1,6 @@
 import type { JSX } from "react";
 import type { Languages } from "../types/language";
 import { importIcons } from "./icons";
-import { VITE_ENVIRONMENT } from "../config/config";
-
-export const SERVER_URL =
-  VITE_ENVIRONMENT === "production"
-    ? "https://dev-quizz-ten.vercel.app"
-    : "http://localhost:5173";
 
 export const LANGUAGE_NAMES = {
   javascript: "JavaScript",
