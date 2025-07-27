@@ -486,147 +486,84 @@
     "options": [".c", ".java", ".cpp", ".h"],
     "correctAnswerIndex": 2
   },
-  {
-    "id": 50,
-    "language": "cpp",
-    "question": "¿Qué permite la sobrecarga de funciones en C++?",
-    "code": "int suma(int a, int b);\ndouble suma(double a, double b);",
-    "options": [
-      "Definir múltiples funciones con el mismo nombre y diferentes parámetros",
-      "Heredar una función de otra clase",
-      "Llamar una función desde otra",
-      "Convertir tipos de variables automáticamente"
-    ],
-    "correctAnswerIndex": 0
-  },
     {
     "id": 51,
     "language": "kotlin",
     "question": "¿Qué palabra clave se utiliza para declarar una variable inmutable en Kotlin?",
     "code": "val nombre = \"Juan\"",
-    "options": [
-      "val",
-      "var",
-      "const",
-      "final"
-    ],
-    "correctAnswerIndex": 0
+    "options": ["var", "let", "const", "val"],
+    "correctAnswerIndex": 3
   },
   {
     "id": 52,
     "language": "kotlin",
-    "question": "¿Cuál es la salida del siguiente código?",
-    "code": "val x = 10\nval y = \"10\"\nprintln(x == y.toInt())",
-    "options": [
-      "true",
-      "false",
-      "Error de compilación",
-      "null"
-    ],
-    "correctAnswerIndex": 0
+    "question": "¿Cuál es la forma correcta de declarar una función en Kotlin?",
+    "code": "fun saludar(nombre: String): String {\n    return \"Hola, $nombre\"\n}",
+    "options": ["function saludar()", "def saludar()", "fun saludar()", "fn saludar()"],
+    "correctAnswerIndex": 2
   },
   {
     "id": 53,
     "language": "kotlin",
-    "question": "¿Cómo se define una función que devuelve un valor en Kotlin?",
-    "code": "fun sumar(a: Int, b: Int): Int {\n    return a + b\n}",
-    "options": [
-      "fun sumar(a: Int, b: Int): Int",
-      "function sumar(a: Int, b: Int): Int",
-      "def sumar(a: Int, b: Int): Int",
-      "Int sumar(Int a, Int b)"
-    ],
-    "correctAnswerIndex": 0
+    "question": "¿Qué tipo de colección es inmutable por defecto en Kotlin?",
+    "code": "val lista = listOf(1, 2, 3)",
+    "options": ["mutableListOf()", "listOf()", "arrayListOf()", "LinkedList()"],
+    "correctAnswerIndex": 1
   },
   {
     "id": 54,
     "language": "kotlin",
-    "question": "¿Qué operador se usa para verificar si un valor puede ser nulo?",
-    "code": "val nombre: String? = null",
-    "options": [
-      "?",
-      "??",
-      "!",
-      "::"
-    ],
-    "correctAnswerIndex": 0
+    "question": "¿Qué operador se usa para hacer una verificación de nulidad segura?",
+    "code": "val longitud = nombre?.length",
+    "options": ["!", "?.", "!!", "?="],
+    "correctAnswerIndex": 1
   },
   {
     "id": 55,
     "language": "kotlin",
-    "question": "¿Cuál es la forma correcta de usar una expresión `when`?",
-    "code": "val x = 2\nwhen (x) {\n    1 -> println(\"Uno\")\n    2 -> println(\"Dos\")\n    else -> println(\"Otro\")\n}",
-    "options": [
-      "when (x) { ... }",
-      "switch (x) { ... }",
-      "case x { ... }",
-      "if (x) { ... }"
-    ],
-    "correctAnswerIndex": 0
+    "question": "¿Cuál es el modificador de visibilidad por defecto en Kotlin?",
+    "code": "class Persona {\n    var nombre: String = \"\"\n}",
+    "options": ["protected", "private", "internal", "public"],
+    "correctAnswerIndex": 3
   },
   {
     "id": 56,
     "language": "kotlin",
-    "question": "¿Qué hace el operador Elvis (`?:`) en Kotlin?",
-    "code": "val nombre: String? = null\nval resultado = nombre ?: \"Desconocido\"",
-    "options": [
-      "Devuelve un valor por defecto si el valor es nulo",
-      "Lanza una excepción si es nulo",
-      "Concatena cadenas",
-      "Invierte el valor booleano"
-    ],
-    "correctAnswerIndex": 0
+    "question": "¿Cómo se llama la función que ejecuta un bloque de código si el objeto no es nulo?",
+    "code": "nombre?.let {\n    println(\"Hola, $it\")\n}",
+    "options": ["apply", "also", "let", "with"],
+    "correctAnswerIndex": 2
   },
   {
     "id": 57,
     "language": "kotlin",
-    "question": "¿Qué es un data class en Kotlin?",
-    "code": "data class Persona(val nombre: String, val edad: Int)",
-    "options": [
-      "Una clase con métodos generados automáticamente como toString y equals",
-      "Una clase que almacena datos en la base de datos",
-      "Una clase abstracta",
-      "Una clase que solo puede heredar de una interfaz"
-    ],
-    "correctAnswerIndex": 0
+    "question": "¿Qué estructura se utiliza para manejar múltiples condiciones en Kotlin?",
+    "code": "when (x) {\n    1 -> println(\"Uno\")\n    else -> println(\"Otro\")\n}",
+    "options": ["switch", "when", "case", "select"],
+    "correctAnswerIndex": 1
   },
   {
     "id": 58,
     "language": "kotlin",
-    "question": "¿Cómo se llama una función de extensión en Kotlin?",
-    "code": "fun String.saludar() = println(\"Hola $this\")",
-    "options": [
-      "Extensión de una clase existente sin modificarla",
-      "Herencia directa de la clase String",
-      "Uso de reflexión para modificar métodos",
-      "Implementación de una interfaz adicional"
-    ],
-    "correctAnswerIndex": 0
+    "question": "¿Qué palabra clave se utiliza para heredar de una clase?",
+    "code": "class Estudiante : Persona()",
+    "options": ["inherits", "extends", "override", ":"],
+    "correctAnswerIndex": 3
   },
   {
     "id": 59,
     "language": "kotlin",
-    "question": "¿Qué hace el operador `!!` en Kotlin?",
-    "code": "val nombre: String? = null\nval longitud = nombre!!.length",
-    "options": [
-      "Fuerza que una variable nula sea tratada como no nula (puede lanzar excepción)",
-      "Ignora el valor si es nulo",
-      "Transforma una cadena vacía en null",
-      "Indica una referencia segura"
-    ],
-    "correctAnswerIndex": 0
+    "question": "¿Qué función de alcance modifica el objeto y lo retorna?",
+    "code": "val persona = Persona().apply {\n    nombre = \"Lucía\"\n}",
+    "options": ["let", "run", "apply", "also"],
+    "correctAnswerIndex": 2
   },
   {
     "id": 60,
     "language": "kotlin",
-    "question": "¿Cuál es la forma correcta de crear una lista inmutable en Kotlin?",
-    "code": "val lista = listOf(1, 2, 3)",
-    "options": [
-      "listOf(1, 2, 3)",
-      "mutableListOf(1, 2, 3)",
-      "arrayListOf(1, 2, 3)",
-      "setOf(1, 2, 3)"
-    ],
-    "correctAnswerIndex": 0
+    "question": "¿Cómo se declara una clase de datos en Kotlin?",
+    "code": "data class Usuario(val nombre: String, val edad: Int)",
+    "options": ["class data Usuario", "data class Usuario", "Usuario class data", "data Usuario class"],
+    "correctAnswerIndex": 1
   }
 ]
