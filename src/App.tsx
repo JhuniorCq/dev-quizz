@@ -12,4 +12,4 @@ function App() {
 
 export default App;
 
-// En el Footer pone al botón de reseteo
+// En el Footer pone al botón de reseteo -> Porque si sale error debe estar ese boton para resetear todo el estado y volver al inicio
