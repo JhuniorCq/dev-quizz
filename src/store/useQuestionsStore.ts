@@ -20,12 +20,7 @@ export const useQuestionsStore = create<QuestionsState>()(
           set({ loading: true });
 
           // Dato: El fetch puede ser directamente a /questions.json -> Ya que desde public se sirve de manera directa
-          const response = await fetch("/questions.json", {
-            headers: {
-              "Content-Type": "application/json",
-            },
-            cache: "no-cache",
-          });
+          const response = await fetch("/questions.json");
 
           if (!response.ok)
             throw new Error("Ocurrió un problema las preguntas.");
