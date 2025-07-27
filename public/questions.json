@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "language": "typescript",
+    "question": "¿Qué tipo devuelve esta función?",
+    "code": "function sum(a: number, b: number) {\n  return a + b;\n}",
+    "options": ["string", "void", "number", "any"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 2,
+    "language": "typescript",
+    "question": "¿Qué hace el operador `as` en TypeScript?",
+    "code": "let value: unknown = \"Hola\";\nlet strLength = (value as string).length;",
+    "options": [
+      "Convierte un valor a string",
+      "Hace una aserción de tipo",
+      "Declara una variable",
+      "Importa una librería"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 3,
+    "language": "typescript",
+    "question": "¿Cuál es el tipo de `x`?",
+    "code": "let x = [1, 2, 3];",
+    "options": ["number", "any[]", "number[]", "Array"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 4,
+    "language": "typescript",
+    "question": "¿Qué significa el tipo `unknown` en TypeScript?",
+    "code": "let data: unknown;\ndata = 10;\nif (typeof data === \"number\") {\n  console.log(data + 1);\n}",
+    "options": [
+      "Es igual a `any`",
+      "Significa que el valor es siempre `null`",
+      "Es un tipo seguro que obliga a hacer comprobaciones antes de usarlo",
+      "Es un tipo reservado para funciones asíncronas"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 5,
+    "language": "typescript",
+    "question": "¿Qué hace esta declaración?",
+    "code": "let value: string | number;",
+    "options": [
+      "Declara `value` como string",
+      "Declara `value` como string o number",
+      "Declara `value` como null",
+      "Declara `value` como tipo personalizado"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 6,
+    "language": "typescript",
+    "question": "¿Qué hace esta interfaz?",
+    "code": "interface Person {\n  name: string;\n  age?: number;\n}",
+    "options": [
+      "Declara un tipo `Person` con `name` opcional",
+      "Declara un tipo `Person` con `age` obligatorio",
+      "Declara un tipo `Person` donde `age` es opcional",
+      "No es una declaración válida"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 7,
+    "language": "typescript",
+    "question": "¿Cuál es la diferencia entre `interface` y `type`?",
+    "code": "interface A { x: number; }\ntype B = { x: number };",
+    "options": [
+      "No hay ninguna diferencia",
+      "Solo `type` puede extender otras interfaces",
+      "`interface` solo se usa con funciones",
+      "`interface` puede ser extendida múltiples veces"
+    ],
+    "correctAnswerIndex": 3
+  },
+  {
+    "id": 8,
+    "language": "typescript",
+    "question": "¿Qué hace esta función genérica?",
+    "code": "function identity<T>(arg: T): T {\n  return arg;\n}",
+    "options": [
+      "Convierte el tipo a `any`",
+      "Devuelve un número",
+      "Devuelve el mismo valor que recibe, con el mismo tipo",
+      "No compila"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 9,
+    "language": "typescript",
+    "question": "¿Qué significa `readonly` en un array?",
+    "code": "const arr: readonly number[] = [1, 2, 3];\n// arr.push(4); ❌ Error",
+    "options": [
+      "El array no puede tener elementos duplicados",
+      "El array solo puede tener strings",
+      "El array no puede ser modificado",
+      "El array no puede contener `null`"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 10,
+    "language": "typescript",
+    "question": "¿Qué tipo tiene `never`?",
+    "code": "function throwError(): never {\n  throw new Error(\"Oops!\");\n}",
+    "options": [
+      "Una función que puede devolver `undefined`",
+      "Una función que nunca retorna",
+      "Un tipo que acepta cualquier valor",
+      "Un sinónimo de `null`"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 11,
+    "language": "javascript",
+    "question": "¿Qué devuelve `typeof null` en JavaScript?",
+    "code": "console.log(typeof null);",
+    "options": ["object", "null", "undefined", "number"],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 12,
+    "language": "javascript",
+    "question": "¿Cuál es el resultado de `0 == '0'`?",
+    "code": "console.log(0 == '0');",
+    "options": ["false", "true", "NaN", "undefined"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 13,
+    "language": "javascript",
+    "question": "¿Qué imprime este código?",
+    "code": "let x = [1, 2, 3];\nconsole.log(typeof x);",
+    "options": ["array", "object", "number", "undefined"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 14,
+    "language": "javascript",
+    "question": "¿Cuál de los siguientes métodos convierte una cadena de texto en un número entero en JavaScript?",
+    "code": "let str = \"123\";\nlet result = /* método aquí */;\nconsole.log(result);",
+    "options": ["parseInt(str)", "toString(str)", "str.concat(123)", "Number.toString(str)"],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 15,
+    "language": "javascript",
+    "question": "¿Qué hace `Array.isArray()`?",
+    "code": "console.log(Array.isArray([1, 2, 3]));",
+    "options": [
+      "Crea un nuevo array",
+      "Verifica si un valor es un array",
+      "Convierte un objeto a array",
+      "Elimina elementos duplicados"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 16,
+    "language": "javascript",
+    "question": "¿Qué valor tiene `NaN === NaN`?",
+    "code": "console.log(NaN === NaN);",
+    "options": ["true", "false", "undefined", "Error"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 17,
+    "language": "javascript",
+    "question": "¿Qué palabra clave permite declarar una variable con alcance de bloque en JavaScript?",
+    "code": "if (true) {\n  /* declara aquí */ nombre = \"Ana\";\n  console.log(nombre);\n}",
+    "options": ["var", "let", "const", "static"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 18,
+    "language": "javascript",
+    "question": "¿Qué hace `setTimeout()`?",
+    "code": "setTimeout(() => {\n  console.log(\"Hola desde el futuro!\");\n}, 1000);",
+    "options": [
+      "Ejecuta una función inmediatamente",
+      "Repite una función en intervalos",
+      "Ejecuta una función después de un retraso",
+      "Pausa la ejecución del programa"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 19,
+    "language": "javascript",
+    "question": "¿Qué imprime este código?",
+    "code": "console.log('5' + 1);",
+    "options": ["6", "51", "undefined", "Error"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 20,
+    "language": "javascript",
+    "question": "¿Qué hace `===` en JavaScript?",
+    "code": "console.log(5 === '5');",
+    "options": [
+      "Compara valores sin importar el tipo",
+      "Compara solo tipos",
+      "Compara valor y tipo",
+      "Es lo mismo que `==`"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 21,
+    "language": "python",
+    "question": "¿Qué tipo de valor devuelve la función `len()`?",
+    "code": "x = len(\"hola\")\nprint(type(x))",
+    "options": ["float", "string", "int", "list"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 22,
+    "language": "python",
+    "question": "¿Qué imprime este código?",
+    "code": "print(type([1, 2, 3]))",
+    "options": ["<class 'list'>", "<class 'tuple'>", "<type 'array'>", "<class 'dict'>"],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 23,
+    "language": "python",
+    "question": "¿Cuál es el resultado de multiplicar una cadena?",
+    "code": "print(3 * 'ab')",
+    "options": ["'ababab'", "'ab3'", "Error", "['ab', 'ab', 'ab']"],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 24,
+    "language": "python",
+    "question": "¿Qué estructura de datos representa una clave y un valor?",
+    "code": "mi_diccionario = {'clave': 'valor'}\nprint(type(mi_diccionario))",
+    "options": ["list", "set", "tuple", "dict"],
+    "correctAnswerIndex": 3
+  },
+  {
+    "id": 25,
+    "language": "python",
+    "question": "¿Qué hace la instrucción `if __name__ == \"__main__\":`?",
+    "code": "if __name__ == \"__main__\":\n    print(\"Ejecutando directamente\")",
+    "options": [
+      "Verifica si hay una función principal",
+      "Impide que el archivo se importe como módulo",
+      "Comprueba si el script se está ejecutando directamente",
+      "Declara una constante global"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 26,
+    "language": "python",
+    "question": "¿Cuál es el resultado de este código?",
+    "code": "x = [1, 2, 3]\nx.append([4, 5])\nprint(x)",
+    "options": ["[1, 2, 3, 4, 5]", "[1, 2, 3, [4, 5]]", "[1, 2, 3, 4]", "Error"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 27,
+    "language": "python",
+    "question": "¿Cómo defines una función en Python?",
+    "code": "def mi_funcion():\n    print(\"Hola\")",
+    "options": ["function myFunc():", "def myFunc():", "fn myFunc():", "func myFunc():"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 28,
+    "language": "python",
+    "question": "¿Qué hace el método `.split()` en un string?",
+    "code": "texto = \"uno,dos,tres\"\nprint(texto.split(','))",
+    "options": [
+      "Divide el texto en caracteres",
+      "Divide el texto en líneas",
+      "Divide el texto por comas",
+      "Elimina las comas del texto"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 29,
+    "language": "python",
+    "question": "¿Qué operador se utiliza para comprobar si un valor está en una lista?",
+    "code": "if 'a' in ['a', 'b', 'c']:\n    print(\"Sí\")",
+    "options": ["==", "is", "has", "in"],
+    "correctAnswerIndex": 3
+  },
+  {
+    "id": 30,
+    "language": "python",
+    "question": "¿Cuál es el valor de `x`?",
+    "code": "x = bool(0)\nprint(x)",
+    "options": ["True", "False", "None", "Error"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 31,
+    "language": "java",
+    "question": "¿Qué palabra clave se utiliza para crear una subclase en Java?",
+    "code": "class Animal {}\nclass Perro extends Animal {}",
+    "options": ["extends", "implements", "inherits", "instanceof"],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 32,
+    "language": "java",
+    "question": "¿Qué imprime este código?",
+    "code": "int x = 5;\nSystem.out.println(x++);",
+    "options": ["6", "4", "5", "Error de compilación"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 33,
+    "language": "java",
+    "question": "¿Qué tipo de dato se utiliza para valores verdaderos o falsos?",
+    "code": "boolean activo = true;",
+    "options": ["boolean", "bit", "truefalse", "logical"],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 34,
+    "language": "java",
+    "question": "¿Qué clase se utiliza para leer datos desde el teclado?",
+    "code": "Scanner sc = new Scanner(System.in);",
+    "options": ["Scanner", "Console", "Input", "Reader"],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 35,
+    "language": "java",
+    "question": "¿Qué hace la palabra clave `static` en un método?",
+    "code": "public static void saludar() {\n  System.out.println(\"Hola\");\n}",
+    "options": [
+      "Hace que el método solo funcione con enteros",
+      "Permite usar el método sin crear una instancia de la clase",
+      "Impide que el método lance excepciones",
+      "Hace que el método solo esté disponible en clases hijas"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 36,
+    "language": "java",
+    "question": "¿Cuál es el valor por defecto de una variable booleana en Java?",
+    "code": "boolean valorPorDefecto; // dentro de una clase",
+    "options": ["true", "false", "null", "0"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 37,
+    "language": "java",
+    "question": "¿Qué imprime este código?",
+    "code": "String s = \"Hola\";\nSystem.out.println(s.length());",
+    "options": ["3", "4", "5", "Error"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 38,
+    "language": "java",
+    "question": "¿Qué tipo de estructura es `ArrayList`?",
+    "code": "ArrayList<String> lista = new ArrayList<>();",
+    "options": ["Clase", "Interfaz", "Enumeración", "Paquete"],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 39,
+    "language": "java",
+    "question": "¿Cuál es la función principal de la JVM?",
+    "code": "// Comentario: ¿Qué hace la JVM?",
+    "options": [
+      "Compilar código Java a C++",
+      "Ejecutar el bytecode Java",
+      "Convertir código Java en HTML",
+      "Crear interfaces gráficas"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 40,
+    "language": "java",
+    "question": "¿Cuál es la firma correcta del método `main` en Java?",
+    "code": "// Método principal de un programa Java",
+    "options": [
+      "public static void main()",
+      "public void main(String[] args)",
+      "static void main(String[] args)",
+      "public static void main(String[] args)"
+    ],
+    "correctAnswerIndex": 3
+  },
+  {
+    "id": 41,
+    "language": "cpp",
+    "question": "¿Qué palabra clave se utiliza para definir una constante?",
+    "code": "const double PI = 3.1416;",
+    "options": ["const", "define", "static", "final"],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 42,
+    "language": "cpp",
+    "question": "¿Qué operador se utiliza para acceder a los miembros de un puntero?",
+    "code": "ptr->metodo();",
+    "options": [".", "->", "::", "#"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 43,
+    "language": "cpp",
+    "question": "¿Qué imprime este código?",
+    "code": "int x = 10 / 3;\nstd::cout << x;",
+    "options": ["3.33", "3", "3.0", "Error"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 44,
+    "language": "cpp",
+    "question": "¿Qué biblioteca se necesita para usar `std::cout`?",
+    "code": "#include <iostream>\nusing namespace std;\ncout << \"Hola\";",
+    "options": ["<cstdio>", "<iostream>", "<stdlib.h>", "<stdio>"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 45,
+    "language": "cpp",
+    "question": "¿Qué significa `#include <iostream>`?",
+    "code": "#include <iostream>",
+    "options": [
+      "Importa una clase de entrada",
+      "Incluye una librería de entrada y salida",
+      "Declara una función externa",
+      "Inicializa la consola"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 46,
+    "language": "cpp",
+    "question": "¿Qué es un constructor?",
+    "code": "class Persona {\n public:\n  Persona() {\n    cout << \"Constructor llamado\";\n  }\n};",
+    "options": [
+      "Una función que libera memoria",
+      "Una función especial que se llama al crear un objeto",
+      "Un método que hereda atributos",
+      "Una clase que crea métodos"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 47,
+    "language": "cpp",
+    "question": "¿Qué indica la palabra clave `virtual` en un método?",
+    "code": "virtual void hablar();",
+    "options": [
+      "Que el método es opcional",
+      "Que puede ser sobreescrito en una clase derivada",
+      "Que solo se puede usar en funciones privadas",
+      "Que el método no retorna valor"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 48,
+    "language": "cpp",
+    "question": "¿Qué imprime este código?",
+    "code": "int arr[] = {1, 2, 3};\nstd::cout << arr[1];",
+    "options": ["1", "2", "3", "Error"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 49,
+    "language": "cpp",
+    "question": "¿Cuál es la extensión de archivo estándar para código fuente en C++?",
+    "code": "// archivo.cpp",
+    "options": [".c", ".java", ".cpp", ".h"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 50,
+    "language": "cpp",
+    "question": "¿Qué permite la sobrecarga de funciones en C++?",
+    "code": "int suma(int a, int b);\ndouble suma(double a, double b);",
+    "options": [
+      "Definir múltiples funciones con el mismo nombre y diferentes parámetros",
+      "Heredar una función de otra clase",
+      "Llamar una función desde otra",
+      "Convertir tipos de variables automáticamente"
+    ],
+    "correctAnswerIndex": 0
+  }
+]
