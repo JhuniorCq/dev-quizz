@@ -1,1 +1,1 @@
-export const { VITE_SERVER_URL } = import.meta.env;
+export const { VITE_ENVIRONMENT } = import.meta.env;
