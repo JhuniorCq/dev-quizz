@@ -32,9 +32,12 @@ const Game = () => {
       )}
 
       {!loading && error && (
-        <p className="text-white text-sm sm:text-bas">
-          {error ?? "Ocurrió un problema."}
-        </p>
+        <div className="flex flex-col items-center gap-6">
+          <p className="py-12 text-white text-sm sm:text-base md:py-24">
+            {error ?? "❌ Ocurrió un problema."}
+          </p>
+          <RestartGameButton name="REINICIAR EL JUEGO" />
+        </div>
       )}
 
       {!loading && !error && questions && (
