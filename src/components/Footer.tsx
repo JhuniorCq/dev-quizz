@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="mt-4 flex flex-col gap-8">
       <p className="text-white text-center text-sm font-semibold text-shadow-[0_0_8px_rgba(255,255,255)] sm:text-base">
-        Desarrollador por JhuniorCq
+        Desarrollado por JhuniorCq
       </p>
 
       <div className="flex gap-4 items-center justify-center text-white">
